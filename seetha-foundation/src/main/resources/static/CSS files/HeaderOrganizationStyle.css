@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	/* box-shadow: 0 8px 10px -6px black; */
+}
+
+.first-section {
+	background-color: #4E6C50;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 2px;
+	border-color: rgb(229, 219, 239);
+	max-width: auto;
+}
+
+.logo {
+	color: #ffff;
+	margin: 5px 100px 5px -200px;
+}
+
+#logo_text {
+	font-weight: 100;
+}
+
+.home {
+	position: relative;
+	display: flex;
+}
+
+.homeIcon .fa-solid {
+	margin-left: -90px;
+	top: -3px;
+	color: #ffff;
+}
+
+.homeIcon .fa-solid:hover {
+	opacity: 0.5px;
+	color: #AA8B56;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.nav-tools {
+	position: relative;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+.hbutton {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	text-decoration: none;
+	border-width: 0.5px;
+	border-color: slategray;
+	color: #434644;
+}
+
+.hbutton:hover {
+	opacity: 0.5px;
+	background-color: #08ea57;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.logoutButton {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	border-width: 0.5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#logout {
+	color: #820000;
+}
+
+.fa-solid:hover {
+	opacity: 0.5px;
+	color: #FF0032;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.fa-solid, .fas {
+	position: relative;
+	font-weight: 900;
+	margin-top: 30px;
+	margin-right: 0;
+	height: 10px;
+	width: 10px;
+}
+
+.session {
+	position: absolute;
+	display: flex;
+	margin-left: -200px;
+}
+
+.loginType {
+	position: relative;
+	margin-top: 33px;
+	margin-bottom: 2px;
+	width: 400px;
+	color: #ffff;
+	text-transform: capitalize;
+	font-weight: 100;
+}

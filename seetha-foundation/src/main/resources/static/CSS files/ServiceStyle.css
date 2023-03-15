@@ -1,0 +1,133 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: sans-serif;
+
+}
+.events {
+	margin-top:100px;
+  background-color: #efefef2e;
+  padding: 50px; }
+
+@media screen and (max-width: 940px) {
+  .events {
+    padding: 30px 10px; } }
+.events .event-ro .event-box {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.events .event-ro .event-box img {
+  margin-bottom: 20px; }
+
+.events .event-ro .event-box h4 {
+  font-size: 18px; }
+
+.events .event-ro .event-box .raises {
+  margin-bottom: 10px; }
+
+.events .event-ro .event-box .raises span {
+  color: #71b61b; }
+
+.events .event-ro .event-box .desic {
+  font-size: 13px;
+  margin-bottom: 15px; }
+
+#service-row{
+	display: flex;
+}
+#second-row{
+	margin-left: 80px;
+}
+#first-row{
+	margin-left: 45px;
+}
+.col-sm-6{
+	min-width: 500px;
+}
+.nav-tools ul{
+	position: relative;
+	display: inline-block;
+	margin-top: 13px;
+	
+}
+ /* count box start */  
+ 
+.counter {
+    background-color:#f5f5f5;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-3x {
+    margin-left:100px;
+    float: none;
+    display: table;
+    color: #CCD6A6;
+    
+}
+
+
+
+.count-box{
+	margin-top: 150px;
+}
+#value, #value1, #value2, #value3{
+	display: none;
+}
+#rupees{
+	display: flex;
+	margin:0 0 -10px 70px;
+	
+}
+.text-row{
+	
+	margin-left: 450px;
+}
+#our{
+	
+	margin-left: 80px;
+}
+.count-row{
+	display: flex;
+	width: 600px;
+	margin-left:60px;
+}
+.col{
+	margin: 20px;
+}
+.counter{
+	width:250px
+}
+
+#staff-count, #valunteer-count, #donee-count{
+	margin-left: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

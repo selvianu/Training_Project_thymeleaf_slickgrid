@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: gray;
+}
+
+
+.section2 {
+	margin : 70px 0 0 0;
+	align-items: center;
+	max-width: auto;
+	position: initial;
+
+}
+
+.tool-list li {
+	justify-content: left;
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hbutton {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	text-decoration: none;
+	border-width: 0.5px;
+	border-color: slategray;
+	color: #434644;
+}
+
+.hbutton:hover {
+	opacity: 0.5px;
+	background-color: #08ea57;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.quotes {
+	
+	text-align:center;
+	font-size: 30px;
+	color: green;
+	margin-top: 150px;
+}
+
+.donate-background {
+	align-content: center;
+	text-align: center;
+	top: 40%;
+	left: 36%;
+}
+
+.section2 .donate-background {
+	position: absolute;
+}
+
+.form {
+	padding: 20px 50px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	color: silver;
+	border-radius: 50px;
+	border-width: 0;
+	align-content: center;
+	line-height: 40px;
+}
+
+.submitButton {
+	padding: 20px 50px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	color: silver;
+	border-radius: 50px;
+	border-width: 0;
+}
+
+.submitButton:hover {
+	opacity: 0.5;
+	background-color: #08ea57;
+	text-decoration-color: white;
+	transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+

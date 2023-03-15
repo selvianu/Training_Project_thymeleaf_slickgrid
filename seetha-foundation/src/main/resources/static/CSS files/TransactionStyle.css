@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.first-section {
+	background-color: aliceblue;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 2px;
+	border-color: rgb(229, 219, 239);
+	max-width: auto;
+}
+
+.logo {
+	color: rgb(32, 215, 74);
+	margin: 5px 100px 5px 20px;
+}
+
+.tool-list li {
+	justify-content: left;
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+.hbutton {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	text-decoration: none;
+	border-width: 0.5px;
+	border-color: slategray;
+	color: #434644;
+}
+
+.hbutton:hover {
+	opacity: 0.5px;
+	background-color: #08ea57;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.logoutButton {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	border-width: 0.5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.logoutButton:hover {
+	opacity: 0.5px;
+	background-color: #FF0032;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.loginType {
+	position: relative;
+	margin-top: 1px;
+	margin-bottom: 2px;
+	text-align: right;
+	color: #658864;
+	padding-right: 20px;
+}
+
+.transactionTable {
+	margin-top: 150px;
+}
+
+table {
+	border-radius: 10px;
+	align-items: center;
+}
+
+table, th, td {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FBF1D3;
+	border: 1px solid black;
+	border-collapse: collapse;
+	align-content: center;
+}

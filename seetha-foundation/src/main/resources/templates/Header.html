@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Header</title>
+<link rel="stylesheet" type="text/css"
+	th:href="@{/CSS files/HeaderFooterStyle.css}">
+<link rel="icon" type="image/x-icon" th:href="@{/images/title-logo.ico}">
+</head>
+<body>
+<header>
+		<section class="first-section">
+			<img alt="logo" th:src="@{/images/logo.png}" class="logo-img">
+
+
+			<div>
+				<!-- Language Dropdown -->
+
+				<select id="languageDropdown" onchange="changeLanguage()">
+					<option value="en">English</option>
+					<option value="fr">Français</option>
+					<option value="es">Español</option>
+					<option value="ta">தமிழ்</option>
+				</select>
+			</div>
+			<div class="nav-tools">
+				<ul class="tool-list">
+					<li id="home">
+						<button class="hbutton"
+							onclick="location.href='/'">
+							Home</button>
+					</li>
+					<li id="about">
+						<button class="hbutton"
+							onclick="location.href='/AboutUs'">
+							About Us</button>
+
+					</li>
+					<li id="services">
+						<button class="hbutton"
+							onclick="location.href='/Service'">
+							Services</button>
+
+					</li>
+					<li id="contact-us">
+						<button class="hbutton"
+							onclick="location.href='/ContactUs'">
+							Contact Us</button>
+
+					</li>
+					<li id="login">
+						<button class="hbutton"
+							onclick="location.href='/JSP files/Login.jsp'">Login</button>
+
+					</li>
+				</ul>
+
+			</div>
+		</section>
+	</header>
+	<script th:src="@{/JS files/LandingScript.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #ffffff;
+	font-family: sans-serif;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.first-section {
+	background-color: aliceblue;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 2px;
+	border-color: rgb(229, 219, 239);
+	max-width: auto;
+}
+
+.logo {
+	color: rgb(32, 215, 74);
+	margin: 5px 100px 5px 20px;
+}
+
+.tool-list li {
+	justify-content: left;
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+.section2 {
+	margin: 70px 0 0 0;
+	align-items: center;
+	max-width: auto;
+	position: initial;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hbutton {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	text-decoration: none;
+	border-width: 0.5px;
+	border-color: slategray;
+	color: #434644;
+}
+
+.hbutton:hover {
+	opacity: 0.5px;
+	background-color: #08ea57;
+	border-color: #51be78;
+	transition: 0.3s;
+}
+
+.quotes {
+	text-align: center;
+	font-size: 30px;
+	color: green;
+}
+
+
+
+.section2 .donate-background {
+	position: absolute;
+}
+
+.donate-background {
+	align-content: center;
+	
+	
+	display: flex;
+	position: absolute;
+	text-align: left;
+	margin-top: 100px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 1000px;
+	height: 400px;
+	overflow-y: auto;
+	
+}
+
+#sentence1 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#amount {
+	position: relative;
+	height: 30px;
+	width: 200px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	padding: 20px 20px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+#amountError{
+	position:absolute;
+	margin-top: -18px;
+	color: red;
+}
+#nameError{
+	position:absolute;
+	margin-top: -8px;
+	color: red;
+}
+#cardNumberError{
+	position:absolute;
+	margin-top: -8px;
+	color: red;
+}
+#yyExpireError{
+	color: red;
+}
+#mmExpireError{
+	
+	color: red;
+}
+#pinError {
+	
+	color: red;
+}
+#upiPinError {
+	
+	color: red;
+}
+#submitError{
+	
+	color: red;
+}
+#upiSubmitError{
+	
+	color: red;
+}
+#upiIdError{
+	
+	color: red;
+}
+
+#creditCard {
+	position: absolute;
+	z-index: 2;
+	text-align: left;
+	margin-top: 200px;
+	margin-bottom: 0;
+	margin-left: 700px;
+	transform: translate(-50%, -50%);
+	background-color: #dfe3df;
+	padding-left: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 400px;
+}
+#UPI {
+	position: absolute;
+	z-index: 2;
+	text-align: left;
+	margin-top: 200px;
+	margin-bottom: 0;
+	margin-left: 700px;
+	transform: translate(-50%, -50%);
+	background-color: #dfe3df;
+	padding-left: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 400px;
+}
+
+#mm {
+	width: 60px;
+	height: 20px;
+	padding: 12px 5px;
+	margin-top: -20px;
+	text-align: center;
+}
+
+#yy {
+	width: 60px;
+	height: 20px;
+	padding: 12px 5px;
+	margin-top: -20px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+#pin {
+	width: 60px;
+	height: 20px;
+	padding: 12px 5px;
+	margin-top: -20px;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+#upiPin {
+	width: 60px;
+	height: 20px;
+	padding: 12px 5px;
+	margin-top: -20px;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+#name {
+	margin-top: -20px;
+}
+
+#card-number {
+	margin-top: -20px;
+}
+
+.close-popup em{
+	margin-top: -10px;
+	margin-right: 10px;
+	color: red;
+	float: right;
+	height: 20px;
+	width: 20px;
+}
+
+.creditButton {
+	padding: 10px 20px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #000000;
+}
+
+.upiButton {
+	padding: 10px 20px;
+	margin-left: 10px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #000000;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=text] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+input[type=number] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	font-size: 15px;
+	border-radius: 5px;
+}
+input[type=password] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.pin-expire {
+	display: flex;
+}
+
+.card-pin {
+	margin-left: 50px;
+}
+
+
+
+.submitButton {
+	margin-top: 10px;
+	color: black;
+	background-color: #08ea57;
+	font-size: 20px; border-radius : 50px;
+	border-width: 0;
+	padding: 10px 30px;
+}
+
+.submitButton:hover {
+	background: green; color : white;
+	text-decoration-color: white;
+	transition: 0.5s;
+	
+}

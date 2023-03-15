@@ -1,0 +1,563 @@
+@charset "ISO-8859-1";
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100%;
+	box-sizing: inherit;
+	padding-bottom: 100px;
+	font-family: sans-serif;
+}
+
+.loginType {
+	position: relative;
+	margin-top: 1px;
+	margin-bottom: 2px;
+	text-align: right;
+	color: #658864;
+	padding-right: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+/* 
+.admin-background #features {
+	background-color: azure;
+	border-radius: 20px;
+	border-style: inset;
+	font-style: normal;
+	font-weight: bold;
+	padding: 8px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+*/
+.admin-feature {
+	position: relative;
+	display: inline-block;
+	margin: 0
+}
+
+#features {
+	padding: 15px 5px;
+	margin: 0;
+}
+
+button {
+	display: inline-block;
+	border-radius: 4px;
+	border: none;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 20px;
+	width: 100%;
+	transition: all 0.5s;
+	cursor: pointer;
+	font-family: sans-serif;
+	background-color: transparent;
+}
+
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+button:hover span {
+	padding-right: 25px;
+	border-style: none;
+	box-shadow: 0 0 20px 0 black;
+}
+
+button:hover span:after {
+	opacity: 10;
+	right: 0;
+}
+
+.management-drop-down {
+	display: none;
+	position: relative;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+.management-button:hover .management-drop-down {
+	display: block;
+}
+
+.management-drop-down #features {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.donation-drop-down {
+	display: none;
+	position: relative;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+.donation-drop-down #features {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.donation-button:hover .donation-drop-down {
+	display: block;
+}
+/* #features:hover {
+	opacity: 0.5px;
+	background-color: #08ea57;
+	border-color: #51be78;
+	transition: 0.3s;
+	color: white;
+} */
+.section2 .admin-background {
+	position: absolute;
+	margin-top: 105px;
+}
+
+.dash-board {
+	position: fixed;
+	margin-left: 10px;
+	width: 220px;
+	background-color: #F9F9F9;
+	border-radius: 20px;
+	border-color: black;
+	box-shadow: 0 0 1px 0 black;
+}
+
+.view-content {
+	background-color: #4E6C50;
+	margin-top: -40px;
+	height: 200px;
+	width: 1280px;
+}
+
+.box-row {
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 50px;
+	display: flex;
+}
+
+#fund-content {
+	display: flex;
+	padding-left: 20px;
+}
+
+#money-icon {
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #54B435;
+}
+
+#manager-icon {
+	font-size: 30px;
+	margin-left: 15px;
+	margin-top: 10px;
+	color: #54B435;
+}
+
+#staff-icon {
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #54B435;
+}
+
+#people-icon {
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #54B435;
+}
+
+#balance {
+	margin-left: 20px;
+	margin-top: -10px;
+	color: #54B435;
+}
+
+#people-icon:hover {
+	color: #54B435;
+}
+
+#staff-icon:hover {
+	color: #54B435;
+}
+
+#manager-icon:hover {
+	color: #54B435;
+}
+
+#money-icon:hover {
+	color: #54B435;
+}
+
+.fund-box {
+	text-align: left;
+	padding: 5px;
+	color: #434242;
+	font-family: sans-serif;
+	background-color: #F5F5F5;
+	border-radius: 20px;
+	height: 100px;
+	width: 180px;
+	margin: 0 20px;
+}
+
+.fund-box:hover {
+	box-shadow: 0 0 10px 0 black;
+}
+
+.fa-coins {
+	height: 10px;
+	width: 10px;
+}
+
+/* table css starts */
+.table-first-row {
+	display: flex;
+}
+
+.stock-table {
+	display: none;
+	margin-top: 10px;
+	margin-left: 320px;
+	width: 600px;
+}
+
+.warehouse-table {
+	display: none;
+	margin-top: 10px;
+	margin-left: 320px;
+	width: 600px;
+}
+
+.donation-status-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 260px;
+	margin-bottom: 30px;
+	width: 990px;
+}
+
+#fund-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 320px;
+	margin-bottom: 30px;
+	width: 900px;
+}
+
+#donation-history-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 320px;
+	margin-bottom: 30px;
+	width: 900px;
+}
+
+#civilians-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 320px;
+	margin-bottom: 30px;
+	width: 900px;
+}
+
+#transacion-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 320px;
+	margin-bottom: 30px;
+	width: 900px;
+}
+
+#volunteers-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 320px;
+	margin-bottom: 30px;
+	width: 900px;
+}
+
+#distributor-table {
+	display: none;
+	margin-top: 20px;
+	margin-left: 320px;
+	margin-bottom: 30px;
+	width: 900px;
+}
+
+#year {
+	padding-right: 80px;
+}
+
+#volunteer-id {
+	padding-left: 10px;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	font-weight: unset;
+	padding-right: 10px;
+	align-content: center;
+	text-align: center;
+	/* text-transform: capitalize; */
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+#stock-caption {
+	font-family: sans-serif;
+	color: whitesmoke;
+}
+
+.table100 {
+	background-color: #fff;
+	height: 250px;
+	position: relative;
+	padding-top: 60px
+}
+
+.table100-head {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #393E46;
+}
+
+#donation-status {
+	background-color: #fff;
+	height: 400px;
+	position: relative;
+	padding-top: 60px
+}
+
+#civilians-details-table {
+	background-color: #fff;
+	height: 400px;
+	position: relative;
+	padding-top: 60px
+}
+
+#transaction-details-table {
+	background-color: #fff;
+	height: 400px;
+	position: relative;
+	padding-top: 60px
+}
+
+#volunteers-details-table {
+	background-color: #fff;
+	height: 400px;
+	position: relative;
+	padding-top: 60px
+}
+
+#distributor-details-table {
+	background-color: #fff;
+	height: 400px;
+	position: relative;
+	padding-top: 60px
+}
+
+.table100-body {
+	max-height: 300px;
+	overflow: auto;
+	z-index: 2;
+}
+
+#donation-status-body {
+	max-height: 400px;
+	overflow: auto;
+	z-index: 2;
+}
+
+#fund-status-body {
+	max-height: 400px;
+	overflow: auto;
+	z-index: 2;
+}
+
+#civilians-table-body {
+	max-height: 400px;
+	overflow: auto;
+	z-index: 2;
+}
+
+#transaction-table-body {
+	margin-top: 25px;
+	max-height: 400px;
+	overflow: auto;
+	z-index: 2;
+}
+
+#volunteers-table-body {
+	margin-top: 25px;
+	max-height: 400px;
+	overflow: auto;
+	z-index: 2;
+}
+
+#distributor-table-body {
+	margin-top: 25px;
+	max-height: 400px;
+	overflow: auto;
+	z-index: 2;
+}
+
+.account-details {
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#acc-name {
+	margin-left: 60px;
+}
+
+#bank-name {
+	float: right;
+	margin-left: 300px;
+}
+
+.transaction-id {
+	width: 20px;
+	padding-left: 5px;
+}
+
+#transaction-description {
+	width: 60px;
+	padding: 0 20px;
+}
+
+.table100.table1 {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 1px 0 black;
+}
+
+.table100.table1 td {
+	font-family: Lato-Regular;
+	font-size: 15px;
+	color: gray;
+	line-height: 1.4
+}
+
+
+/*table style start  */
+
+#donation-status-part,#volunteer-table-part,
+#stock-status-part {
+	border-radius:10px;
+	height: 400px;
+	overflow-y: scroll;
+	margin-bottom: 50px;
+	
+}
+#donation-status-part:hover,#volunteer-table-part:hover,
+#stock-status-part:hover  {
+	box-shadow: 0 0 5px 0 black;
+}
+#volunteer-table {
+	border-collapse: separated;
+	width: 100%;
+}
+
+#donation-table-part, #stock-table-part {
+	border-collapse: separated;
+	width: 900px;
+}
+
+table,td,th {
+	padding: 10px;
+	margin: auto;
+	border-collapse: collapse;
+}
+/*  */
+#volunteer-head {
+	top: 0;
+	position: sticky;
+	background: black;
+}
+
+#donation-table-head, #donation-status-caption,
+#stock-table-head,#stock-caption{
+	top: 0;
+	position: sticky;
+	background: #1A374D;
+	color: #ffff;
+}
+
+#location-code{
+	text-transform: uppercase;
+}
+#description, #status{
+	text-transform: capitalize;
+}
+/*table style end  */
+
+/* search bar style start*/
+#myInput,#myInput1 {
+	padding: 5px 10px;
+	width: 200px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+/* scroll bar style */
+/* width */
+#donation-status-part::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#donation-status-part::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+#donation-status-part::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
+  
+}
+
+/* Handle on hover */
+#donation-status-part::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
